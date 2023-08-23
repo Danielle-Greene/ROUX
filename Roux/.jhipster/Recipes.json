@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20230823211607",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "recipes",
+  "fields": [
+    {
+      "fieldName": "recipeName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Recipes",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "completedMeals",
+      "ownerSide": true,
+      "relationshipName": "recipes",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

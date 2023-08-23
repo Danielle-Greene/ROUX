@@ -1,0 +1,29 @@
+
+entity Ingredients {
+	ingredientName String
+}
+
+entity Recipes {
+	recipeName String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity CompletedMeals {
+	prepSteps String,
+	ingredientList String,
+	cookingSteps String
+}
+
+
+
+relationship ManyToOne {
+	Ingredients{ingredients} to Recipes
+}
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+	Recipes{recipes} to CompletedMeals
+}
+
+

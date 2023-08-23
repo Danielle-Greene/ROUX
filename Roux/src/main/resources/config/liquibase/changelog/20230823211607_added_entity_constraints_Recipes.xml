@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Recipes.
+    -->
+    <changeSet id="20230823211607-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="recipes_id"
+                                 baseTableName="recipes"
+                                 constraintName="fk_recipes__recipes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="completed_meals"/>
+    </changeSet>
+</databaseChangeLog>

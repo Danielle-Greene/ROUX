@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20230823211608",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "completed_meals",
+  "fields": [
+    {
+      "fieldName": "prepSteps",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ingredientList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cookingSteps",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "not an ignored comment",
+  "jpaMetamodelFiltering": false,
+  "name": "CompletedMeals",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

@@ -1,0 +1,26 @@
+{
+  "applications": "*",
+  "changelogDate": "20230823211606",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "ingredients",
+  "fields": [
+    {
+      "fieldName": "ingredientName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Ingredients",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "recipes",
+      "relationshipName": "ingredients",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
